@@ -1,5 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
+/**
+ * @date 2019.9.23
+ */
 class Solution {
 public:
 	double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
@@ -20,6 +23,7 @@ public:
 			if (lmax1 > rmin2) r = mid1 - 1;
 			else if (lmax2 > rmin1) l = mid1 + 1;
 			else break;
+			// printf("%d %d %d %d\n", lmax1, rmin1, lmax2, rmin2 );
 		}
 		return (max(lmax1, lmax2) + min(rmin1, rmin2)) / 2.0;
 	}
