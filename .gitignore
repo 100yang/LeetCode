@@ -2,6 +2,7 @@
 *.[oa]
 #忽略所有以~ 结尾的文件
 *~
+*shared library
 # Prerequisites
 *.d
 
